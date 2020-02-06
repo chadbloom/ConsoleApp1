@@ -12,6 +12,7 @@ namespace ConsoleApp2
             answer = Console.ReadLine();
             int score;
             score = Convert.ToInt32(answer);
+            //nested if statement that determines grade
             if (score >= 98)
             {
                 Console.WriteLine("Your grade will be an A+");
