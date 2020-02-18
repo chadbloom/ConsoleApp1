@@ -11,6 +11,14 @@ namespace Iterative
             n = Console.ReadLine();
             int m;
             m = Convert.ToInt32(n);
+            if (m % 2 ==0)
+            {
+                Console.Write("This is an even number");
+            }
+            else
+            {
+                Console.Write("This is an odd number");
+            }
         }
     }
 }
