@@ -13,15 +13,21 @@ namespace Iterative
             m = Convert.ToInt32(n);
             if (m % 2 ==0)
             {
-
                 m = m + 1;
-                Console.Write("This is an even number");
+                while (m > 0)
+                {
+                    Console.Write("This is an even number");
+                    m = m - 1;
+                }
             }
             else
             {
-
                 m = m - 1;
-                Console.Write("This is an odd number");
+                while (m > 0)
+                {
+                    Console.Write("This is an odd number");
+                    m = m - 1;
+                }
             }
         }
     }
