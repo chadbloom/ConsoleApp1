@@ -7,26 +7,29 @@ namespace Iterative
         static void Main(string[] args)
         {
             string n;
-            Console.WriteLine("Please enter an integer from 2 to 10");
+            Console.WriteLine("Please enter an integer from 2 to 10:");
             n = Console.ReadLine();
-            int m;
+            int m,c;
             m = Convert.ToInt32(n);
             if (m % 2 ==0)
             {
                 m = m + 1;
-                while (m > 0)
+                c = 1;
+                while (c < m)
                 {
-                    Console.Write("This is an even number");
-                    m = m - 1;
+                    
+                    Console.WriteLine(c + ". This is an even number");
+                    c = c - 1;
                 }
             }
             else
             {
                 m = m - 1;
-                while (m > 0)
+                c = 1;
+                while (c < m)
                 {
-                    Console.Write("This is an odd number");
-                    m = m - 1;
+                    Console.WriteLine(c + ". This is an odd number");
+                    c = c - 1;
                 }
             }
         }
