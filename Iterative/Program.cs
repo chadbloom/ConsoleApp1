@@ -15,21 +15,21 @@ namespace Iterative
             {
                 m = m + 1;
                 c = 1;
-                while (c < m)
+                while (c < m + 1)
                 {
                     
                     Console.WriteLine(c + ". This is an even number");
-                    c = c - 1;
+                    c = c + 1;
                 }
             }
             else
             {
                 m = m - 1;
                 c = 1;
-                while (c < m)
+                while (c < m + 1)
                 {
                     Console.WriteLine(c + ". This is an odd number");
-                    c = c - 1;
+                    c = c + 1;
                 }
             }
         }
