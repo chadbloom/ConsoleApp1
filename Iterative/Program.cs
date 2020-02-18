@@ -17,9 +17,8 @@ namespace Iterative
                 c = 1;
                 while (c < m + 1)
                 {
-                    
                     Console.WriteLine(c + ". This is an even number");
-                    c = c + 1;
+                    c++;
                 }
             }
             else
@@ -29,7 +28,7 @@ namespace Iterative
                 while (c < m + 1)
                 {
                     Console.WriteLine(c + ". This is an odd number");
-                    c = c + 1;
+                    c++;
                 }
             }
         }
