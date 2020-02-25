@@ -22,29 +22,35 @@ namespace Methodizer
             a = Console.ReadLine();
             Console.WriteLine("Enter the second value:");
             b = Console.ReadLine(); 
+
+            // convert information to usable data
             x = Convert.ToInt32(a);
             y = Convert.ToInt32(b);
 
             // start if statement here
-            if (action == "+")  // for addition
+            if (action == "/" && y == 0)
+            {
+                Console.WriteLine("Can't divide by zero!");
+            }
+            else if (action == "+")  // for addition
             {
                 c = AddInputs(x, y);
-                Console.WriteLine(c);
+                Console.WriteLine("The sum of " + x + " and " + y + " is " + c);
             }
             else if (action == "-") // for subtraction
             {
                 c = SubtractInputs(x, y);
-                Console.WriteLine(c);
+                Console.WriteLine("The difference of " + x + " and " + y + " is " + c);
             }
             else if (action == "*") // for multiplication
             {
                 c = MultiplyInputs(x, y);
-                Console.WriteLine(c);
+                Console.WriteLine("The product of " + x + " and " + y + " is " + c);
             }
             else if (action == "/") // for division
             {
                 c = DivideInputs(x, y);
-                Console.WriteLine(c);
+                Console.WriteLine("The quotient of dividend: " + x + " and divisor: " + y + " is " +c);
             }
             else                    // for incorrectly entered arithmatic functions
             {
