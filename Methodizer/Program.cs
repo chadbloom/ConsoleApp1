@@ -8,7 +8,7 @@ namespace Methodizer
         static void Main(string[] args)
         {
             String a, b;
-            int x, y; //, c;
+            int x, y, c;
             PrintName();
             Console.WriteLine("Enter the first value:");
             a = Console.ReadLine();
@@ -17,8 +17,8 @@ namespace Methodizer
             x = Convert.ToInt32(a);
             y = Convert.ToInt32(b);
 
-            AddInputs(x, y);
-            print(c);
+            c = AddInputs(x, y);
+            Console.WriteLine(c);
 
             // this method prints my name
             static void PrintName()
