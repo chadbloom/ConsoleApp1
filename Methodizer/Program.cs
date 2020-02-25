@@ -26,27 +26,27 @@ namespace Methodizer
             y = Convert.ToInt32(b);
 
             // start if statement here
-            if (action == "+")  
+            if (action == "+")  // for addition
             {
                 c = AddInputs(x, y);
                 Console.WriteLine(c);
             }
-            else if (action == "-")
+            else if (action == "-") // for subtraction
             {
                 c = SubtractInputs(x, y);
                 Console.WriteLine(c);
             }
-            else if (action == "*")
+            else if (action == "*") // for multiplication
             {
                 c = MultiplyInputs(x, y);
                 Console.WriteLine(c);
             }
-            else if (action == "/")
+            else if (action == "/") // for division
             {
                 c = DivideInputs(x, y);
                 Console.WriteLine(c);
             }
-            else
+            else                    // for incorrectly entered arithmatic functions
             {
                 Console.WriteLine("You have entered an invlid function.  Please start over.");
             }
