@@ -7,18 +7,32 @@ namespace Methodizer
                 // This is the main operation
         static void Main(string[] args)
         {
-            String a, b;
+            // declare variables
+            String a, b, action;
             int x, y, c;
+
+            // call on the method to print my name
             PrintName();
+
+            // collect pertinent information for calculations
+            Console.WriteLine("Which arithmetic operation would you like to do?");
+            Console.WriteLine("Please enter '+', '-', '*' or '/':");
+            action = Console.ReadLine();
             Console.WriteLine("Enter the first value:");
             a = Console.ReadLine();
             Console.WriteLine("Enter the second value:");
-            b = Console.ReadLine();
+            b = Console.ReadLine(); 
             x = Convert.ToInt32(a);
             y = Convert.ToInt32(b);
 
-            c = AddInputs(x, y);
-            Console.WriteLine(c);
+            // start if statement here
+            if (action == "+")
+            {
+                c = AddInputs(x, y);
+                Console.WriteLine(c);
+            }
+            //c = AddInputs(x, y);
+            //Console.WriteLine(c);
 
             // this method prints my name
             static void PrintName()
@@ -31,6 +45,30 @@ namespace Methodizer
             {
                 int c;
                 c = x + y;
+                return c;
+            }
+
+            // this method performs the subtraction
+            static int SubtractInputs(int x, int y)
+            {
+                int c;
+                c = x - y;
+                return c;
+            }
+
+            // this method performs the multiplication
+            static int MultiplyInputs(int x, int y)
+            {
+                int c;
+                c = x * y;
+                return c;
+            }
+
+            // this metho performs the division
+            static int DivideInputs(int x, int y)
+            {
+                int c;
+                c = x / y;
                 return c;
             }
         }
