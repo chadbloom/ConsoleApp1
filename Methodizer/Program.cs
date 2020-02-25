@@ -4,7 +4,7 @@ namespace Methodizer
 {
     class Program
     {
-                // This is the main operation
+        // This is the main operation
         static void Main(string[] args)
         {
             // declare variables
@@ -16,11 +16,16 @@ namespace Methodizer
 
             // collect pertinent information for calculations
             Console.WriteLine("Which arithmetic operation would you like to do?");
-            Console.WriteLine("Please enter '+', '-', '*' or '/':");
+            Console.WriteLine("Please enter '+', '-', '*' or '/' (no quotes):");
             action = Console.ReadLine();
-            Console.WriteLine("Enter the first value:");
+            //if (action != "+" && action != "-" && action != "*" && action != "/")
+            //{
+                            
+            //}
+            //else
+            Console.WriteLine("Enter the first integer:");
             a = Console.ReadLine();
-            Console.WriteLine("Enter the second value:");
+            Console.WriteLine("Enter the second integer:");
             b = Console.ReadLine(); 
 
             // convert information to usable data
