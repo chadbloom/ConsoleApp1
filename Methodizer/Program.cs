@@ -26,7 +26,7 @@ namespace Methodizer
             y = Convert.ToInt32(b);
 
             // start if statement here
-            if (action == "+")
+            if (action == "+")  
             {
                 c = AddInputs(x, y);
                 Console.WriteLine(c);
@@ -40,6 +40,15 @@ namespace Methodizer
             {
                 c = MultiplyInputs(x, y);
                 Console.WriteLine(c);
+            }
+            else if (action == "/")
+            {
+                c = DivideInputs(x, y);
+                Console.WriteLine(c);
+            }
+            else
+            {
+                Console.WriteLine("You have entered an invlid function.  Please start over.");
             }
             //c = AddInputs(x, y);
             //Console.WriteLine(c);
