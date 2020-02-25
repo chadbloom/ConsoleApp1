@@ -31,6 +31,16 @@ namespace Methodizer
                 c = AddInputs(x, y);
                 Console.WriteLine(c);
             }
+            else if (action == "-")
+            {
+                c = SubtractInputs(x, y);
+                Console.WriteLine(c);
+            }
+            else if (action == "*")
+            {
+                c = MultiplyInputs(x, y);
+                Console.WriteLine(c);
+            }
             //c = AddInputs(x, y);
             //Console.WriteLine(c);
 
