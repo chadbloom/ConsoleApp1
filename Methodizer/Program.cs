@@ -56,8 +56,6 @@ namespace Methodizer
             {
                 Console.WriteLine("You have entered an invlid function.  Please start over.");
             }
-            //c = AddInputs(x, y);
-            //Console.WriteLine(c);
 
             // this method prints my name
             static void PrintName()
