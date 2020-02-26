@@ -18,11 +18,6 @@ namespace Methodizer
             Console.WriteLine("Which arithmetic operation would you like to do?");
             Console.WriteLine("Please enter '+', '-', '*' or '/' (no quotes):");
             action = Console.ReadLine();
-            //if (action != "+" && action != "-" && action != "*" && action != "/")
-            //{
-                            
-            //}
-            //else
             Console.WriteLine("Enter the first integer:");
             a = Console.ReadLine();
             Console.WriteLine("Enter the second integer:");
