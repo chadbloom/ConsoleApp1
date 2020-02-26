@@ -71,38 +71,6 @@ namespace Methodizer
             {
                 Console.WriteLine("Chad Bloom");
             }
-
-            // this method performs the addition
-            //static int AddInputs(int x, int y)
-            //{
-            //    int c;
-            //    c = x + y;
-            //    return c;
-            //}
-
-            // this method performs the subtraction
-            //static int SubtractInputs(int x, int y)
-            //{
-            //    int c;
-            //    c = x - y;
-            //    return c;
-            //}
-
-            // this method performs the multiplication
-            //static int MultiplyInputs(int x, int y)
-            //{
-            //    int c;
-            //    c = x * y;
-            //    return c;
-            //}
-
-            // this metho performs the division
-            //static int DivideInputs(int x, int y)
-            //{
-            //    int c;
-            //    c = x / y;
-            //    return c;
-            //}
         }
     }
 }
