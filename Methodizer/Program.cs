@@ -9,7 +9,7 @@ namespace Methodizer
         {
             // declare variables
             String a, b, action;
-            int x, y, c;
+            int x, y;
 
             // call on the method to print my name
             PrintName();
@@ -26,35 +26,44 @@ namespace Methodizer
             // convert information to usable data
             x = Convert.ToInt32(a);
             y = Convert.ToInt32(b);
+            Math(x, y, action);
 
-            // start if statement here
-            if (action == "/" && y == 0)
+            // start big method here
+            static void Math(int x, int y, string action)
             {
-                Console.WriteLine("Can't divide by zero!");
-            }
-            else if (action == "+")  // for addition
-            {
-                c = AddInputs(x, y);
-                Console.WriteLine("The sum of " + x + " and " + y + " is " + c);
-            }
-            else if (action == "-") // for subtraction
-            {
-                c = SubtractInputs(x, y);
-                Console.WriteLine("The difference of " + x + " and " + y + " is " + c);
-            }
-            else if (action == "*") // for multiplication
-            {
-                c = MultiplyInputs(x, y);
-                Console.WriteLine("The product of " + x + " and " + y + " is " + c);
-            }
-            else if (action == "/") // for division
-            {
-                c = DivideInputs(x, y);
-                Console.WriteLine("The quotient of dividend: " + x + " and divisor: " + y + " is " +c);
-            }
-            else                    // for incorrectly entered arithmatic functions
-            {
-                Console.WriteLine("You have entered an invlid function.  Please start over.");
+                if (action == "/" && y == 0)
+                {
+                    Console.WriteLine("Can't divide by zero!");
+                }
+                else if (action == "+")  // for addition
+                {
+                    int c;
+                    c = x + y;
+                    //return c;
+                    Console.WriteLine("The sum of " + x + " and " + y + " is " + c);
+                }
+                else if (action == "-") // for subtraction
+                {
+                    int c;
+                    c = x - y;
+                    Console.WriteLine("The difference of " + x + " and " + y + " is " + c);
+                }
+                else if (action == "*") // for multiplication
+                {
+                    int c;
+                    c = x * y;
+                    Console.WriteLine("The product of " + x + " and " + y + " is " + c);
+                }
+                else if (action == "/") // for division
+                {
+                    int c;
+                    c = x / y;
+                    Console.WriteLine("The quotient of dividend: " + x + " and divisor: " + y + " is " + c);
+                }
+                else                    // for incorrectly entered arithmatic functions
+                {
+                    Console.WriteLine("You have entered an invlid function.  Please start over.");
+                }
             }
 
             // this method prints my name
@@ -64,36 +73,36 @@ namespace Methodizer
             }
 
             // this method performs the addition
-            static int AddInputs(int x, int y)
-            {
-                int c;
-                c = x + y;
-                return c;
-            }
+            //static int AddInputs(int x, int y)
+            //{
+            //    int c;
+            //    c = x + y;
+            //    return c;
+            //}
 
             // this method performs the subtraction
-            static int SubtractInputs(int x, int y)
-            {
-                int c;
-                c = x - y;
-                return c;
-            }
+            //static int SubtractInputs(int x, int y)
+            //{
+            //    int c;
+            //    c = x - y;
+            //    return c;
+            //}
 
             // this method performs the multiplication
-            static int MultiplyInputs(int x, int y)
-            {
-                int c;
-                c = x * y;
-                return c;
-            }
+            //static int MultiplyInputs(int x, int y)
+            //{
+            //    int c;
+            //    c = x * y;
+            //    return c;
+            //}
 
             // this metho performs the division
-            static int DivideInputs(int x, int y)
-            {
-                int c;
-                c = x / y;
-                return c;
-            }
+            //static int DivideInputs(int x, int y)
+            //{
+            //    int c;
+            //    c = x / y;
+            //    return c;
+            //}
         }
     }
 }
